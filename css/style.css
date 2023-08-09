@@ -2,13 +2,12 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
 }
 body{
     font-family: 'Work Sans', sans-serif;
 }
-.parent{
-    background-color: #eee;
-}
+/* start container */
 .container{
     padding-left: 15px;
     padding-right: 15px;
@@ -34,6 +33,8 @@ body{
       width: 1170px;
     }
   }
+/* End container */
+/* start header */
 .header{
   padding: 20px;
 }
@@ -110,3 +111,4 @@ body{
 .header .links ul li:not(:last-child){
   border-bottom: 1px solid #eee;
 }
+/* End Header */
