@@ -386,6 +386,11 @@ body{
   color:var(--main-color);
   text-decoration: none;
 }
+@media (max-width:786px) {
+  .contact .info a{
+    font-size: 25px;
+  }
+}
 .contact .info .social{
   margin-top: 20px;
   display: flex;
@@ -397,3 +402,15 @@ body{
   margin-left: 10px;
 }
 /* End contact */
+/* Start footer */
+.footer{
+  background-color: var(--secondary-color);
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.footer span{
+  color: var(--main-color);
+}
+/* End footer */
