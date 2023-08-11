@@ -1,3 +1,8 @@
+:root{
+  --main-color: #10cab7;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+}
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,7 +18,6 @@ body{
     padding-right: 15px;
     margin-left:auto;
     margin-right: auto;
-    background-color: bisque;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -115,7 +119,7 @@ body{
 /* End Header */
 /* Start Landing */
 .landing{
-  background-image: url(../images/landing.jpg);
+  background-image: url(../images/montain.jpg);
   background-size: cover;
   height: calc(100vh - 75px);
   position: relative;
@@ -131,7 +135,7 @@ body{
 }
 .landing .intro-text h1{
   margin: 0;
-  color: #10cab7;
+  color: var(--main-color);
   font-weight: bold;
   font-size: 50px;
 }
@@ -140,3 +144,28 @@ body{
   line-height: 1.8;
 }
 /* End Landing */
+/* Start Features */
+.features{
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.features .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.features .container .feature i{
+  color: var(--main-color);
+}
+.features .container .feature h3{
+  margin: 30px 0;
+  font-weight: 800;
+}
+.features .container .feature p{
+  color: #777;
+  line-height: 1.8;
+  font-size: 17px;
+}
+/* End Features */
