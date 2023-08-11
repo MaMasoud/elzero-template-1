@@ -11,9 +11,9 @@ body{
 .container{
     padding-left: 15px;
     padding-right: 15px;
-    width: 600px;
     margin-left:auto;
     margin-right: auto;
+    background-color: bisque;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -86,6 +86,7 @@ body{
   min-width: 200px;
   top:calc(100% + 15px);
   display:none;
+  z-index: 4;
 }
 .header .links ul::before{
   content: '';
@@ -112,3 +113,30 @@ body{
   border-bottom: 1px solid #eee;
 }
 /* End Header */
+/* Start Landing */
+.landing{
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 75px);
+  position: relative;
+}
+.landing .intro-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 400px;
+  max-width: 100%;
+}
+.landing .intro-text h1{
+  margin: 0;
+  color: #10cab7;
+  font-weight: bold;
+  font-size: 50px;
+}
+.landing .intro-text p{
+  font-size: 19px;
+  line-height: 1.8;
+}
+/* End Landing */
