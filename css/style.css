@@ -60,6 +60,15 @@ body{
     margin-top: -20px;
   }
 }
+@media (max-width:300px){
+  .special-heading{
+    font-size: 40px;
+  }
+  .special-heading + p{
+    font-size: 10px;
+    margin-top: -14px;
+  }
+}
 /* End components */
 /* End container */
 /* start header */
@@ -180,6 +189,11 @@ body{
   gap: 20px;
   text-align: center;
 }
+@media (max-width:300px) {
+  .features .container{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
 .features .container .feature i{
   color: var(--main-color);
 }
@@ -202,6 +216,11 @@ body{
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width:300px) {
+  .services .services-content{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 .services .services-content .srv{
   display: flex;
@@ -269,6 +288,11 @@ body{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
+@media (max-width:300px) {
+  .portfolio .portfolio-content{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 .portfolio .portfolio-content .col{
   overflow: hidden;
   background-color: #fff;
@@ -308,6 +332,11 @@ body{
 .about .about-content .image{
   width: 250px;
   position: relative;
+}
+@media (max-width:300px) {
+  .about .about-content .image{
+    width: 200px;
+  }
 }
 .about .about-content .image::before{
   content: '';
@@ -389,6 +418,14 @@ body{
 @media (max-width:786px) {
   .contact .info a{
     font-size: 25px;
+  }
+}
+@media (max-width:300px) {
+  .contact .info .label{
+    font-size: 18px;
+  }
+  .contact .info a{
+    font-size: 15px;
   }
 }
 .contact .info .social{
